@@ -1,0 +1,50 @@
+#header
+{
+    margin: auto;
+    text-align: center;
+    width: 50%;
+    border: 2px solid blue;
+    border-radius: 5px;
+}
+
+#msg-display
+{
+    margin: auto;
+    text-align: center;
+    border: 2px solid green;
+    width: 80%;
+    margin-top: 20px;
+}
+
+#server-connection-status
+{
+    text-align: left;
+    margin-left: 20px;
+}
+
+#msg-display-table
+{
+    border: 2px solid black;
+    border-radius: 5px;
+    width: 100%;
+}
+
+#msg-display-table-col-1
+{
+    width: 20%;
+}
+
+#msg-display-table-col-2
+{
+    width: 60%;
+}
+
+#msg-display-table-col-3
+{
+    width: 20%;
+}
+
+td, th
+{
+    border: 2px solid black;
+}

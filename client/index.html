@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>demonstrator</title>
+        <link rel = "stylesheet" href="css/stylesheet.css">
+    </head>
+
+    <body>
+        <div id="header">
+            <h4> simple CAN message display</h4>
+        </div>
+
+        <div id="msg-display">
+            <table id='msg-display-table'>
+
+                <colgroup>
+                    <col id="msg-display-table-col-1">
+                    <col id="msg-display-table-col-2">
+                    <col id="msg-display-table-col-3">
+                </colgroup>
+                <tr>
+                    <th>
+                        <p>message ID</p>
+                    </th>
+                    <th>
+                        <p>message data</p>
+                    </th>
+                    <th>
+                        <p>message timestamp</p>
+                    </th>
+                </tr>
+                <tr>
+                    <td>
+                        <p id="id-display">id here</p>
+                    </td>
+                    <td>
+                        <div>
+                            <p id="msg-data-display">msg data here</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <p id="timestamp">timestamp here</p>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+            
+        </div>
+    
+    <script src="/socket.io/socket.io.js"></script>
+    <script src="js/main.js"></script>
+    </body>
+
+</html>
