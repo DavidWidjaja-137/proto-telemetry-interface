@@ -31,4 +31,45 @@ var data =
         }
 }
 
+Solar Car specs:
+
 ```
+ID: 0x622
+```
+var send = 
+{
+    "ID": "0x622", 
+	"TimeStamp":milli
+	 "relayFault":relayFault,
+	 "K3": K3,
+	 "K2": K2,
+	 "K1": K1,
+	 "faultState":faultState,
+	 "timer":timer,
+	 "fanOn":fanOn,
+	 "LLIM":LLIM,
+	 "HLIM":HLIM,
+	 "CANrequest":CANrequest,
+	 "HARDWIRErequest":HARDWIRErequest,
+	 "interlock":interlock,
+	 "powerLoad":powerLoad,
+	 "powerSource":powerSource,
+     "overVoltage":overVoltage,
+     "underVoltage":underVoltage,
+     "overTemperature":overTemperature,
+     "dischargeOvercurrent":dischargeOvercurrent, 
+     "chargeOvercurrent":chargeOvercurrent,
+     "commFault": commFault,
+     "interlockTrip":interlockTrip,
+     "drivingOff":drivingOff,
+     "isoFault": isoFault,
+     "lowSOH": lowSOH,
+     "hotTemp": hotTemp,
+     "coldTemp":coldTemp,
+     "dischargeOC":dischargeOC,
+     "chargeOC":chargeOC,
+     "highVolt":highVolt,
+     "lowVolt": lowVolt
+     
+}
+
