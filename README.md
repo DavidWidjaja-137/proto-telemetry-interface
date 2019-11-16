@@ -14,7 +14,7 @@ npm install
 ```
 npm start
 ```
-Then point your browser to httpL//localhost:3000
+Then point your browser to http://localhost:3000
 
 
 
