@@ -16,21 +16,38 @@ server.listen(
 
 app.use(express.static(path.join(__dirname, '/../client')));
 
-console.log("Server Begin");
-
 io.on(
     'connection',
     function(socket)
     {
-        console.log("init msg sent");
-        io.emit('can-msg', "hello");
+        console.log("Initial Message Sent");
+        io.emit('introduction');
     }
 )
 
 setInterval(
     function(){
-        io.emit('can-msg', "sleep");
+        var data = generateData();
+        io.emit('battery-temp-msg', data);
     },
     1000
 )
+
+function generateData()
+{
+    var data = 
+    {
+        "msg-id": 0x627,
+        "msg-source": "bms",
+        "timestamp": new Date().getTime(),
+        "data": 
+            {
+                "ave-batt-temp": Math.floor(Math.random() * 100),
+                "max-batt-temp":  Math.floor(Math.random() * 100),
+                "min-batt-temp":  Math.floor(Math.random() * 100),
+            }
+    }
+
+    return data;
+}
 

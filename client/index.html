@@ -2,14 +2,16 @@
 <html>
 
     <head>
-        <title>demonstrator</title>
+        <title>Prototype Interface</title>
         <link rel = "stylesheet" href="css/stylesheet.css">
     </head>
 
     <body>
         <div id="header">
-            <h4> simple CAN message display</h4>
+            <h4>Prototype Display</h4>
         </div>
+
+        <h4 id="server-connection-status">Disconnected</h4>
 
         <div id="msg-display">
             <table id='msg-display-table'>
@@ -21,30 +23,61 @@
                 </colgroup>
                 <tr>
                     <th>
-                        <p>message ID</p>
+                        <p>Description</p>
                     </th>
                     <th>
-                        <p>message data</p>
+                        <p>Data</p>
                     </th>
                     <th>
-                        <p>message timestamp</p>
+                        <p>Timestamp</p>
                     </th>
                 </tr>
                 <tr>
                     <td>
-                        <p id="id-display">id here</p>
+                        <p>Average Battery Temperature</p>
                     </td>
                     <td>
                         <div>
-                            <p id="msg-data-display">msg data here</p>
+                            <p id="ave-batt-temp">-</p>
                         </div>
                     </td>
                     <td>
                         <div>
-                            <p id="timestamp">timestamp here</p>
+                            <p id="ave-batt-temp-ts">-</p>
                         </div>
                     </td>
                 </tr>
+                <tr>
+                    <td>
+                        <p>Maximum Battery Temperature</p>
+                    </td>
+                    <td>
+                        <div>
+                            <p id="max-batt-temp">-</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <p id="max-batt-temp-ts">-</p>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <p>Minimum Battery Temperature</p>
+                    </td>
+                    <td>
+                        <div>
+                            <p id="min-batt-temp">-</p>
+                        </div>
+                    </td>
+                    <td>
+                        <div>
+                            <p id="min-batt-temp-ts">-</p>
+                        </div>
+                    </td>
+                </tr>
+
             </table>
             
         </div>
